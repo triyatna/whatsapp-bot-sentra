@@ -1,0 +1,53 @@
+{
+  "name": "wa-api-handle-for-client",
+  "version": "1.0.0",
+  "description": "Handle Message whatsapp for API and Multi Device [MD]",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    ".": "node server.js"
+  },
+  "keywords": [
+    "whatsapp-bot",
+    "bot-whatsapp",
+    "multi-device",
+    "bot-whatsapp-md",
+    "project-wa-api"
+  ],
+  "author": "TY_StudioDev",
+  "license": "CLI",
+  "engines": {
+    "node": ">=14.5.0"
+  },
+  "homepage": "https://tystudiodev.my.id",
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.4.0",
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "better-sqlite3": "^7.6.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.14.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.1.0",
+    "http": "0.0.1-security",
+    "link-preview-js": "^2.1.13",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.0",
+    "node-json-db": "^2.1.3",
+    "openai": "^3.1.0",
+    "pino": "^7.6.1",
+    "qrcode": "^1.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.2",
+    "systeminformation": "^5.12.7",
+    "uuid": "^9.0.0",
+    "ws": "^7.3.1"
+  }
+}

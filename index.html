@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    tes
+    <div id="qrcheck">s</div>
+    <div class="card text-center">
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-primary p-3 mt-2 text-white">
+              INFORMATION DEVICE
+            </div>
+            <div class="card-body border-secondary">
+              <ul class="list-group account list-group-flush text-left">
+                <li class="list-group-item verif">Name :</li>
+                <li class="list-group-item number">Number :</li>
+                <li class="list-group-item desc"></li>
+              </ul>
+              <div class="mt-5 logoutbutton"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.socket.io/4.4.1/socket.io.min.js"
+      integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let socket = io("http://localhost:3000", {
+        transports: ["websocket", "polling", "flashsocket"],
+      });
+      socket.on("qr", (src) => {
+        console.log(src.stats);
+        document.getElementById(
+          "qrcheck"
+        ).innerHTML = `<img src="${src.url}" height="300px" alt="">`;
+      });
+
+      socket.on("Authenticated", (src) => {
+        const verif =
+          src.data.verifiedName == ""
+            ? ``
+            : src.data.verifiedName == src.data.name
+            ? `Verified Name : ${src.data.verifiedName} &#9989`
+            : `Verified Name : ${src.data.verifiedName}`;
+        $(".name").html(`${src.data.name}`);
+        $(".number").html(
+          `Number : ${src.data.id.replace("@s.whatsapp.net", "")}`
+        );
+        $(".device").html(`Device : Device not detected `);
+        // $('.desc').html(`Bussines : ${src.profile.description}`)
+        $(".verif").html(`${verif}`);
+        $(".qrcheck").html(` <img src="${src.pic}" height="300px" alt="">`);
+        console.log(src.pic);
+        $(".statusss").html(
+          `<div class="d-flex align-items-center text-success"> <span class="badge-dot me-2 bg-success"></span> <span class="text-capitalize"> Connected </span> </div>`
+        );
+        $(".logoutbutton")
+          .html(` <button class="btn btn-danger" class="logout"  id="logout"  onclick="Logout(<?= get('id')?>)">
+                                               Logout
+                                           </button>`);
+      });
+    </script>
+  </body>
+</html>

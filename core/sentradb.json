@@ -1,0 +1,125 @@
+{
+    "groups": {
+        "123-456@g.us": {
+            "id": "123-456@g.us",
+            "groupName": "TY STUDIO DEV",
+            "mute": false
+        },
+        "62895349086103-1631628929@g.us": {
+            "id": "62895349086103-1631628929@g.us",
+            "groupName": "Best Practice",
+            "mute": false,
+            "welcome": {
+                "status": true,
+                "msg": "Welcome @user in group {title}"
+            },
+            "leave": {
+                "status": true,
+                "msg": "Good bye @user"
+            }
+        },
+        "6289612131266-1519911398@g.us": {
+            "id": "6289612131266-1519911398@g.us",
+            "groupName": "😋🏍STMJ😜🏍",
+            "mute": false,
+            "welcome": {
+                "status": true,
+                "msg": "Welcome @user in group {title}"
+            },
+            "leave": {
+                "status": true,
+                "msg": "Good bye @user"
+            }
+        }
+    },
+    "stats": {
+        "msgSent": 1,
+        "msgRecv": 1,
+        "filesize": 1
+    },
+    "mediaMessage": {
+        "file": {
+            "FILE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666672624430-001-A HIMAMEN.pdf": {
+                "from": {
+                    "sender": "Triyatna Lesmana",
+                    "phone": "62895349086103@s.whatsapp.net",
+                    "device": "android"
+                },
+                "mimetype": "application/pdf",
+                "filename": "FILE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666672624430-001-A HIMAMEN.pdf",
+                "path": "uploads/messages/",
+                "url": "D:\\project\\sentra-bot\\uploads/messages/FILE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666672624430-001-A HIMAMEN.pdf",
+                "size": {
+                    "length": "351623",
+                    "height": "document",
+                    "width": "document"
+                },
+                "timestamp": 1666672624431
+            },
+            "IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714174202.png": {
+                "from": {
+                    "sender": "Triyatna Lesmana",
+                    "phone": "62895349086103@s.whatsapp.net",
+                    "device": "web"
+                },
+                "mimetype": "image/jpeg",
+                "filename": "IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714174202.png",
+                "path": "uploads/messages/",
+                "url": "D:\\project\\sentra-bot\\uploads/messages/IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714174202.png",
+                "size": {
+                    "length": "11516",
+                    "height": 200,
+                    "width": 200
+                },
+                "timestamp": 1666714174204
+            },
+            "IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714238631.png": {
+                "from": {
+                    "sender": "Triyatna Lesmana",
+                    "phone": "62895349086103@s.whatsapp.net",
+                    "device": "web"
+                },
+                "mimetype": "image/jpeg",
+                "filename": "IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714238631.png",
+                "path": "uploads/messages/",
+                "url": "D:\\project\\sentra-bot\\uploads/messages/IMAGE_Triyatna Lesmana-62895349086103@s.whatsapp.net-1666714238631.png",
+                "size": {
+                    "length": "32883",
+                    "height": 500,
+                    "width": 500
+                },
+                "timestamp": 1666714238633
+            }
+        }
+    },
+    "IPwhitelist": {
+        "result": {
+            "::1": {
+                "from": {
+                    "ip_addr": "::1"
+                },
+                "ip_addr": "::1",
+                "description": "IP rumah",
+                "timestamp": 1666758757277
+            }
+        }
+    },
+    "MediaAPIresult": {
+        "file": {
+            "api-1666758792687-4_20220627_095951_0003.png": {
+                "from": {
+                    "ip_addr": "::1"
+                },
+                "originalname": "4_20220627_095951_0003.png",
+                "encoding": "7bit",
+                "mimetype": "image/png",
+                "destination": "./uploads/",
+                "filename": "api-1666758792687-4_20220627_095951_0003.png",
+                "path": "uploads\\api-1666758792687-4_20220627_095951_0003.png",
+                "size": 1461144,
+                "url": "D:\\project\\sentra-bot/uploads/api-1666758792687-4_20220627_095951_0003.png",
+                "timestamp": 1666758792778
+            }
+        }
+    }
+}

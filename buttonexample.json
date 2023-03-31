@@ -1,0 +1,9 @@
+{
+  "footer": "date",
+  "button": [
+    { "data": "id1", "text": "typse" },
+    { "data": "id1", "text": "stype" },
+    { "data": "id1", "text": "tyspe" }
+  ],
+  "media": "yes"
+}
